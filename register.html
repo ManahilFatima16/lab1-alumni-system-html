@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni System - Register</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Register a new alumni account">
+</head>
+<body>
+
+    <header>
+        <h1>Alumni System</h1>
+        <p><em>Stay connected. Stay proud.</em></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Create Your Alumni Account</h2>
+            <p>
+                Fill in the form below to join the network. Fields marked
+                <strong>required</strong> must be completed.
+            </p>
+
+            <form action="#" method="post">
+                <div>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+                <br>
+                <div>
+                    <label for="batch">Graduation Year:</label><br>
+                    <input type="number" id="batch" name="batch" placeholder="2022" min="1950" max="2026" required>
+                </div>
+                <br>
+                <div>
+                    <label for="department">Department:</label><br>
+                    <select id="department" name="department">
+                        <option value="cs">Computer Science</option>
+                        <option value="business">Business Administration</option>
+                        <option value="ee">Electrical Engineering</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+                <br>
+                <button type="submit">Register</button>
+            </form>
+
+            <p>
+                Already have an account? <a href="login.html">Login here</a>.
+            </p>
+        </section>
+
+        <section>
+            <h3>Registration Guidelines</h3>
+            <ol>
+                <li>Use your real full name for verification</li>
+                <li>Choose a strong password (8+ characters)</li>
+                <li>Double check your graduation year and department</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Alumni System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
